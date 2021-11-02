@@ -1,0 +1,131 @@
+/* цвет остновного текста  #212121;*/
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+/* белый #E5E5E5 */
+/* вторичный белый */
+        /* Цвет фона #2F303A */
+
+:root{
+    --main-color-text: #212121;
+    --secondary-color-text:#757575;
+    --accented-color-text:#2196F3;
+    --background-head-footer: #2F303A
+    ;
+    
+}
+body{
+    color:var(--main-color-text) ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+}
+
+/* Логотип */
+.logo{
+    font-family: 'Raleway', sans-serif;
+    color: var(--accented-color-text);
+    font-size: 26px;
+    text-decoration: none;
+
+}
+.name-logo{
+    color:var(--main-color-text);
+}
+/* Навигация */
+.list-item{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-list .list-item:hover,
+.nav-list .list-item:focus
+{
+    color: var(--accented-color-text);   
+}
+ .list-item:visited{
+    color: var(--main-color-text);   
+}
+
+
+/* Данные/контакты */
+ .contacts{
+    color: var(--secondary-color-text);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.contacts:hover,
+.contacts:focus{
+    color:var(--accented-color-text);
+}
+/* первая секция */
+.section{
+    background-color: var(--background-head-footer);
+    
+}
+.slogan{
+    font-size: 44px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+
+ .button{ 
+    background-color: var(--accented-color-text);
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+/*  2 секция  */
+.title{
+    font-size: 14px;
+    font-weight: 700;   ;
+}
+.description{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color-text) ;
+}
+/* 3 секция картинки и заголовок*/
+.heading{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+/* 4 секция карточки работников */
+.section-worker{
+    background-color: #F5F4FA;
+}
+.worker {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.position{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color-text);
+    text-align: center;
+}
+/* футер сайта */
+.footer{
+    background-color: var(--background-head-footer);
+}
+.footer-logo{
+    color: #Ffffff;
+
+}
+.address{
+    font-size: 14px ;
+    font-weight: 400;
+    color: #ffffff;   
+}
+.footer .contacts{
+    font-weight: 400;
+}
+/* Вторая страничка портфолио
+    КНОПКИ*/
+.work-button .button{
+
+}
+

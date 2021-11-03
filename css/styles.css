@@ -9,14 +9,18 @@
     --main-color-text: #212121;
     --secondary-color-text:#757575;
     --accented-color-text:#2196F3;
-    --background-head-footer: #2F303A
-    ;
+    --background-head-footer: #2F303A;
+    --main-text: 14px;
     
 }
 body{
     color:var(--main-color-text) ;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    
+}
+.list{
+    list-style: none;
     
 }
 
@@ -26,6 +30,7 @@ body{
     color: var(--accented-color-text);
     font-size: 26px;
     text-decoration: none;
+    line-height: 1.17;
 
 }
 .name-logo{
@@ -33,9 +38,10 @@ body{
 }
 /* Навигация */
 .list-item{
-    font-size: 14px;
+    font-size: var(--main-text);
     font-weight: 500;
     text-decoration: none;
+    line-height: 1.17;
 }
 .nav-list .list-item:hover,
 .nav-list .list-item:focus
@@ -50,9 +56,10 @@ body{
 /* Данные/контакты */
  .contacts{
     color: var(--secondary-color-text);
-    font-size: 14px;
+    font-size: var(--main-text);
     font-weight: 500;
     text-decoration: none;
+    line-height: 1.17;
 }
 .contacts:hover,
 .contacts:focus{
@@ -68,29 +75,36 @@ body{
     font-weight: 900;
     text-align: center;
     color: white;
+    line-height: 1.36;
 }
 
  .button{ 
     background-color: var(--accented-color-text);
     color: #ffffff;
     cursor: pointer;
+    line-height: 1.87;
+
     
 }
 /*  2 секция  */
 .title{
-    font-size: 14px;
-    font-weight: 700;   ;
+    font-size: var(--main-text);
+    font-weight: 700;
+    line-height: 1.17;
 }
 .description{
-    font-size: 14px;
+    font-size: var(--main-text);
     font-weight: 400;
     color: var(--secondary-color-text) ;
+    line-height: 1.71;
 }
+
 /* 3 секция картинки и заголовок*/
 .heading{
     font-size: 36px;
     font-weight: 700;
     text-align: center;
+    line-height: 1.17;
 }
 /* 4 секция карточки работников */
 .section-worker{
@@ -100,12 +114,14 @@ body{
     font-size: 16px;
     font-weight: 500;
     text-align: center;
+    line-height: 1.17;
 }
 .position{
     font-size: 16px;
     font-weight: 400;
     color: var(--secondary-color-text);
     text-align: center;
+    line-height: 1.17;
 }
 /* футер сайта */
 .footer{
@@ -116,9 +132,10 @@ body{
 
 }
 .address{
-    font-size: 14px ;
+    font-size: var(--main-text) ;
     font-weight: 400;
-    color: #ffffff;   
+    color: #ffffff; 
+    line-height: 1.71 ;  
 }
 .footer .contacts{
     font-weight: 400;
@@ -126,6 +143,14 @@ body{
 /* Вторая страничка портфолио
     КНОПКИ*/
 .work-button .button{
-
+    background-color: #F5F4FA;
+    color: var(--main-color-text);
+    font-size: 16px;
+    line-height: 1.625;
+    
 }
-
+.work-button .button:hover,
+.work-button .button:focus{
+    background-color: var(--accented-color-text) ;
+    color:#ffffff;
+}

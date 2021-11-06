@@ -51,6 +51,9 @@ body{
 {
     color: var(--accented-color-text);   
 }
+.nav-site-link:visited{
+    color: var(--main-color-text);
+}
 .current{
     color: var(--accented-color-text);
 }
@@ -70,6 +73,9 @@ body{
 .contacts-link:hover,
 .contacts-link:focus{
     color:var(--accented-color-text);
+}
+.contacts-link:visited{
+    color: var(--secondary-color-text);
 }
 /* первая секция */
 .section-slogan{

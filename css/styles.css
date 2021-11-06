@@ -50,9 +50,7 @@ body{
 {
     color: var(--accented-color-text);   
 }
-.nav-site-link:visited{
-    color: var(--main-color-text);
-}
+
 .current{
     color: var(--accented-color-text);
 }

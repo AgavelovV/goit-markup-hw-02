@@ -15,8 +15,7 @@
 }
 body{
     color:var(--main-color-text) ;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif
     
 }
 .list{
@@ -31,52 +30,59 @@ body{
     font-size: 26px;
     text-decoration: none;
     line-height: 1.17;
+    letter-spacing: 0.03em;
+    
 
 }
 .name-logo{
     color:var(--main-color-text);
 }
 /* Навигация */
-.list-item{
+.nav-site-link{
     font-size: var(--main-text);
     font-weight: 500;
     text-decoration: none;
     line-height: 1.17;
     color: var(--main-color-text);
+    letter-spacing: 0.02em;
 }
-.nav-list .list-item:hover,
-.nav-list .list-item:focus
+.nav-site-link:hover,
+.nav-site-link:focus
 {
     color: var(--accented-color-text);   
 }
- .list-item:visited{
-    color: var(--main-color-text);   
+.current{
+    color: var(--accented-color-text);
 }
+
+ 
 
 
 /* Данные/контакты */
- .contacts{
+ .contacts-link{
     color: var(--secondary-color-text);
     font-size: var(--main-text);
     font-weight: 500;
     text-decoration: none;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
-.contacts:hover,
-.contacts:focus{
+.contacts-link:hover,
+.contacts-link:focus{
     color:var(--accented-color-text);
 }
 /* первая секция */
-.section{
+.section-slogan{
     background-color: var(--background-head-footer);
     
 }
-.slogan{
+.section-slogan-title{
     font-size: 44px;
     font-weight: 900;
     text-align: center;
     color: white;
     line-height: 1.36;
+    letter-spacing: 0.06em;
 }
 
  .button{ 
@@ -84,45 +90,58 @@ body{
     color: #ffffff;
     cursor: pointer;
     line-height: 1.87;
+    letter-spacing: 0.06em;
 
     
 }
 /*  2 секция  */
-.title{
+.section-info-title{
     font-size: var(--main-text);
     font-weight: 700;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
-.description{
+.section-info-text{
     font-size: var(--main-text);
     font-weight: 400;
     color: var(--secondary-color-text) ;
     line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* 3 секция картинки и заголовок*/
-.heading{
+.section-photo-title{
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 /* 4 секция карточки работников */
 .section-worker{
     background-color: #F5F4FA;
 }
-.worker {
+.section-worker-title{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+.worker-title {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
-.position{
+.worker-text {
     font-size: 16px;
     font-weight: 400;
     color: var(--secondary-color-text);
     text-align: center;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 /* футер сайта */
 .footer{
@@ -130,28 +149,57 @@ body{
 }
 .footer-logo{
     color: #Ffffff;
-
+    letter-spacing: 0.03em;
 }
-.address{
+
+.footer-address{
     font-size: var(--main-text) ;
     font-weight: 400;
     color: #ffffff; 
-    line-height: 1.71 ;  
+    line-height: 1.71 ;
+    font-style: normal;
+    text-decoration: none;  
+    letter-spacing: 0.03em;
 }
-.footer .contacts{
+.footer-link{
     font-weight: 400;
+    color: var(--secondary-color-text);
+    font-size: var(--main-text);
+    text-decoration: none;
+    line-height: 1.17;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+.footer-link:hover,
+.footer-link:focus{
+    color: var(--accented-color-text);
 }
 /* Вторая страничка портфолио
     КНОПКИ*/
-.work-button .button{
+.buttons{
     background-color: #F5F4FA;
     color: var(--main-color-text);
     font-size: 16px;
     line-height: 1.625;
-    
+    letter-spacing: 0.03em;
+    font-weight: 500;    
 }
-.work-button .button:hover,
-.work-button .button:focus{
+ .buttons:hover,
+ .buttons:focus{
     background-color: var(--accented-color-text) ;
     color:#ffffff;
+}
+.work-examples-title{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    line-height: 1.625;
+}
+.work-examples-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color-text);
+    text-align: center;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }

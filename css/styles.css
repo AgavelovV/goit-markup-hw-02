@@ -20,9 +20,12 @@ p,h1,h2,h3,h4,h5,h6{
 ul{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
     
 }
 .container{
@@ -37,9 +40,7 @@ body{
     font-family: 'Roboto', sans-serif
     
 }
-.list{
-    list-style: none; 
-}
+
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -55,16 +56,19 @@ body{
     letter-spacing: 0.03em;
     display: block;
     align-items: center;
-    margin-right: 93px;
+    
     
 }
 .name-logo{
     color:var(--main-color-text);
 }
 /* Навигация */
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 .header-container{
     display: flex;
-    border-bottom: 1px solid #ECECEC;
+    align-items: center;
 }
 .nav{
     display: flex;
@@ -74,6 +78,7 @@ body{
 }
 .nav-site-list{
     display: flex;
+    margin-left: 93px;
 }
 .nav-site-item:not(:last-child){
     margin-right: 50px;
@@ -106,6 +111,7 @@ body{
 }
 .contacts-list{
     display: flex;
+    margin-left: auto;
 }
 .contacts-item:not(:last-child){
     margin-right: 50px;
@@ -130,15 +136,11 @@ body{
 .section-slogan{
     background-color: var(--background-head-footer);
     padding-top: 200px;
-    padding-bottom: 250px;
+    padding-bottom: 200px;
     
     
 }
-.slogan-container{
-    width: 696px;
-    
-    
-}
+
 .section-slogan-title{
     font-size: 44px;
     font-weight: 900;
@@ -148,6 +150,9 @@ body{
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
  .button{ 
@@ -161,11 +166,15 @@ body{
     min-width: 200px;
     min-height: 50px;
     margin: 0 auto;
+    border: transparent;
     
     
 }
 /*  2 секция  */
-
+.section-info-head{
+    display: none;
+    visibility: hidden;
+}
 .section-info-list{
     display: flex;
 }
@@ -190,11 +199,13 @@ body{
 }
 
 /* 3 секция картинки и заголовок*/
-.photo-container{
-    padding-bottom: 94px;
+
+.section-photo{
+    padding-top: 0;
 }
 .section-photo-list{
     display: flex;
+    
 }
 .section-photo-item:not(:last-child) {
     margin-right: 30px;
@@ -220,12 +231,15 @@ body{
 .section-worker-item{
     flex-basis: calc(100% / 4 - 30px);
     margin-right: 30px;
-}
-    
-.section-worker-item{
+    background-color: #Ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.section-worker-content{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
 .section-worker{
     background-color: #F5F4FA;
 }
@@ -243,9 +257,8 @@ body{
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .worker-text {
@@ -254,7 +267,7 @@ body{
     color: var(--secondary-color-text);
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
+   
     text-align: center;
 }
 /* футер сайта */
@@ -270,7 +283,7 @@ body{
 .address{
     margin-top: 20px;
 }
-.footer-item{
+.footer-item:not(:last-child){
     margin-bottom: 9px;
 }
 .footer-address{
@@ -299,16 +312,19 @@ body{
 }
 /* Вторая страничка портфолио
     КНОПКИ*/
+.section-button-title {
+    display: none;
+    visibility:hidden;
+}
 .section-button-list{
     display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
     
 }    
-.section-button-item:first-child{
-    margin-left: 280px;
-}
+
 .section-button-item{
-    display: flex;
-    margin-bottom: 50px;
+
       
     
 }
@@ -344,17 +360,16 @@ body{
 .work-examples-item{
     flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
-    margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
-box-sizing: border-box;
+    margin-bottom: 30px;  
 }
-
+.work-exaples-content{
+    padding: 20px 24px;
+}
 .work-examples-title{
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.06em;
     line-height: 1.625;
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 .work-examples-text{
@@ -363,5 +378,5 @@ box-sizing: border-box;
     color: var(--secondary-color-text);
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-bottom: 20px;
+   
 }

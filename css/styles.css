@@ -152,7 +152,9 @@ body{
         url(../images/team.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    
+    background-size: auto;
+    margin: auto;
+    max-width: 1600px;
 }
 
 .section-slogan-title{
@@ -189,10 +191,8 @@ body{
     display: none;
     visibility: hidden;
 }
-.info-list{
-    display: flex;
-}
-.info-item{
+
+.info-container{
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
@@ -202,9 +202,7 @@ body{
     align-items: center;
     margin-bottom: 30px;
 }
-.info-item:not(:last-child){
-    margin-right: 30px;
-}
+
 .section-info-list{
     display: flex;
 }
@@ -338,37 +336,33 @@ body{
     margin-bottom: 50px;
 }
 .section-clients-list{
+    display: flex; 
+}
+.section-clients-link{  
+   color: #AFB1B8;
+   border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     
 }
-.section-clients-link{
-    display: block;
-   color: #AFB1B8;
+.section-clients-link:hover,
+.section-clients-link:focus{
+    color:var(--accented-color-text) ;
+    border-color: var(--accented-color-text);
     
 }
 .section-clients-icon{
     fill: currentColor;
 }
-.section-clients-link:hover,
-.section-clients-link:focus{
-    color:var(--accented-color-text) ;
-    
-}
+
 .section-clients-item{
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-.section-clients-item:hover,
-.section-clients-item:focus{
-    border-color: var(--accented-color-text);
 }
 .section-clients-item:not(:last-child){
     margin-right: 30px;
@@ -422,17 +416,15 @@ body{
 }
 .container-footer{
     display: flex;
-    flex-direction: row ;
+    align-items: baseline;
 }
 .footer-left{
     display: flex;
     flex-direction: column;
 }
 .foooter-rigth{
-    display: flex;
-    flex-direction: column;
     margin-left: 70px;
-    margin-top: 12px;
+   
 }
 .footer-subscribe-title{
     text-transform: uppercase;
@@ -497,13 +489,14 @@ body{
     border-radius: 4px;
     padding: 6px 22px 6px 22px;
     border: 0;
-    
+    cursor: pointer;
      
 }
  .buttons:hover,
  .buttons:focus{
     background-color: var(--accented-color-text) ;
     color:#ffffff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Карточки второй странички */
 .work-examples-list{
@@ -518,10 +511,22 @@ body{
     margin-right: 30px;
     margin-bottom: 30px; 
 }
-.work-examples-item:hover,
-.work-examples-item:focus{
+.work-examples-link{
+    display: block;
+    text-decoration: none;
+    
+}
+
+.work-examples-link:focus,
+.work-examples-link:hover{
+    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
 }
+
+.work-examples-link:visited{
+    color: initial;
+}
+
 .work-exaples-content{
     padding: 20px 24px;
 }

@@ -514,7 +514,6 @@ body{
 .work-examples-link{
     display: block;
     text-decoration: none;
-    
 }
 
 .work-examples-link:focus,
@@ -524,7 +523,7 @@ body{
 }
 
 .work-examples-link:visited{
-    color: initial;
+    color: #000000;
 }
 
 .work-exaples-content{

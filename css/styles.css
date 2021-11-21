@@ -514,7 +514,7 @@ body{
 .work-examples-link{
     display: block;
     text-decoration: none;
-    
+    color: var(--main-color-text);
 }
 
 .work-examples-link:focus,

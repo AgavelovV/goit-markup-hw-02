@@ -514,16 +514,13 @@ body{
 .work-examples-link{
     display: block;
     text-decoration: none;
+    
 }
 
 .work-examples-link:focus,
 .work-examples-link:hover{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
-}
-
-.work-examples-link:visited{
-    color: #000000;
 }
 
 .work-exaples-content{

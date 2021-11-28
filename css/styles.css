@@ -11,6 +11,7 @@
     --accented-color-text:#2196F3;
     --background-head-footer: #2F303A;
     --main-text: 14px;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     
 }
@@ -84,24 +85,40 @@ body{
     margin-right: 50px;
 
 }
+.nav-site-item{
+    position: relative;
+}
 .nav-site-link{
     font-size: var(--main-text);
     font-weight: 500;
     text-decoration: none;
     line-height: 1.17;
     color: var(--main-color-text);
-    letter-spacing: 0.02em;
-      
+    letter-spacing: 0.02em; 
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.current{
+    color: var(--accented-color-text);
+}
+.current::after{
+    content: '';
+    border-bottom: 4px solid var(--accented-color-text);
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -32px;
+    
 }
 .nav-site-link:hover,
 .nav-site-link:focus
 {
-    color: var(--accented-color-text);   
+    color: var(--accented-color-text);  
 }
 
-.current{
-    color: var(--accented-color-text);
-}
+
 
 /* Данные/контакты */
 .contactsss{
@@ -117,7 +134,6 @@ body{
     fill: currentColor;
     margin-right: 10px;
 }
-
 .contacts-item:not(:last-child){
     margin-right: 50px;
 }
@@ -130,7 +146,8 @@ body{
     letter-spacing: 0.03em;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
 .contacts-link:focus{
@@ -237,16 +254,45 @@ body{
 }
 .section-photo-item:not(:last-child) {
     margin-right: 30px;
-
 }
+
 .section-photo-title{
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;  
+}
+.section-photo-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: var(--main-text);
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-transform: uppercase;
+    background-color:rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    width: 100%;
+    text-align: center; 
+     opacity: 0;
+     transform: translateY(100%);
+}
+
+.section-photo-item:hover .section-photo-text,
+.section-photo-item:focus .section-photo-text{
+    opacity: 1;
+    transform: translateY(0);
+    transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.section-photo-container{
+    position: relative;
+    overflow: hidden;
 }
 /* 4 секция карточки работников */
 
@@ -317,6 +363,8 @@ body{
     align-items: center;
     border-radius: 50%;
     color: #AFB1B8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .worker-social-icon{
     fill: currentColor;
@@ -348,6 +396,8 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .section-clients-link:hover,
@@ -408,6 +458,7 @@ body{
     line-height: 1.17;
     font-style: normal;
     letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .footer-link:hover,
@@ -448,6 +499,8 @@ body{
     border-radius: 50%;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .footer-subscribe-icon{
     fill: currentColor;
@@ -515,14 +568,45 @@ body{
     display: block;
     text-decoration: none;
     color: var(--main-color-text);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-examples-link:focus,
 .work-examples-link:hover{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
+    
+}
+.work-examples-container{
+    position: relative;
+    overflow: hidden;
+}
+.work-examples-link:hover .work-examples-imgtext,
+.work-examples-link:focus .work-examples-imgtext{
+    opacity: 1 ;
+    transform: translateY(0);
+    transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
+.work-examples-imgtext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    line-height: 1.55;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px 63px 24px;
+    opacity: 0;
+    transition:opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+}
 .work-exaples-content{
     padding: 20px 24px;
 }
@@ -540,4 +624,45 @@ body{
     line-height: 1.17;
     letter-spacing: 0.03em;
    
+}
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 530px;
+    min-height: 580px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+   
+}
+
+.button-icon{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius:50% ;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    
 }

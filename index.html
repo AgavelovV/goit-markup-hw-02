@@ -51,7 +51,7 @@
         <section class="section-slogan">
             <div class="container ">
                 <h1 class="section-slogan-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="button"> Заказать услугу</button>
+                <button type="button" class="button"data-modal-open> Заказать услугу</button>
             </div>
         </section>
         <section class="section">
@@ -111,13 +111,22 @@
                 <h2 class="section-photo-title">Чем мы занимаемся</h2>
                 <ul class="section-photo-list ">
                     <li class="section-photo-item">
-                        <img src="images/section.jpg" alt="Человек печаетает" width="370" height="294">
+                        <div class="section-photo-container">
+                            <img src="images/section.jpg" alt="Человек печаетает" width="370" height="294">
+                            <p class="section-photo-text">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="section-photo-item">
-                        <img src="images/section2.jpg" alt="Человек Смотрит в телефон" width="370" height="294">
+                        <div class="section-photo-container">
+                            <img src="images/section2.jpg" alt="Человек Смотрит в телефон" width="370" height="294">
+                            <p class="section-photo-text">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="section-photo-item">
-                        <img src="images/section3.jpg" alt="Человек вибирает цвет" width="370" height="294">
+                        <div class="section-photo-container">
+                            <img src="images/section3.jpg" alt="Человек вибирает цвет" width="370" height="294">
+                            <p class="section-photo-text">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -499,8 +508,17 @@
         
                     
             </div>
-            
-        </footer>
-    
+          </footer>
+                                                <div class="backdrop is-hidden"data-modal>
+                                                    <div class="modal">
+                                                        <button type="button" class="button-icon"data-modal-close>
+                                                            <svg 
+                                                                width="11"
+                                                                height="11">
+                                                            <use href="./images/icons.svg#icon-Exit"></use></svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

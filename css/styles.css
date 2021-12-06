@@ -316,6 +316,8 @@ input{
     align-items: center;
 
     opacity: 0;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(100%);
 }
 
@@ -323,8 +325,7 @@ input{
 .section-photo-item:focus .section-photo-text {
     opacity: 1;
     transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
 }
 
 .section-photo-container {
@@ -915,14 +916,12 @@ input{
     border: none; 
 }
 .label-policy{
-    margin-bottom: 30px;
     font-weight: 400;
     font-size: 14px;
     color: var(--secondary-color-text);
     line-height: 1.71;
     letter-spacing: 0.03em;
-    cursor: pointer;
-
+    cursor: pointer;  
 }
 .lebel-policy-link{
     color: var(--accented-color-text);
@@ -942,6 +941,6 @@ input{
     border: transparent;
     cursor: pointer;
     display: block;
-    margin: 0 auto;
+    margin: 30px auto 0 auto ;
 }
 

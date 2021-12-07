@@ -852,11 +852,10 @@ input{
     outline: none;
     
 }
-.form-input:hover,
+
 .form-input:focus{
     border-color: var(--accented-color-text);  
 }
-.form-input:hover ~.form-svg,
 .form-input:focus ~ .form-svg{
     border-color: var(--accented-color-text);   
     color: var(--accented-color-text);
@@ -887,7 +886,6 @@ input{
     margin-top: 4px;
     
 }
-.form-textarea:hover,
 .form-textarea:focus{
     border-color: var(--accented-color-text);
 }

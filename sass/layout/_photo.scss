@@ -1,0 +1,47 @@
+.section-photo {
+    padding-top: 0;
+}
+
+.section-photo__list {
+    display: flex;
+
+}
+
+.section-photo__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.section-photo__title {
+    @include font($fsz:36px, $fw:700);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-photo__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include font($fw:700);
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: #ffffff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    .section-photo__item:hover &,
+    .section-photo__item:focus & {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.section-photo__container {
+    position: relative;
+    overflow: hidden;
+}

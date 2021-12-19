@@ -1,0 +1,34 @@
+.section-info__head {
+    display: none;
+    visibility: hidden;
+}
+
+.section-info__container {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-info__list {
+    display: flex;
+}
+
+.section-info__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.section-info__title {
+    @include font($fw:700,);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-info__text {
+    @include font( $fw:400, $lh:1.71,);
+    color: var(--secondary-color-text);
+}

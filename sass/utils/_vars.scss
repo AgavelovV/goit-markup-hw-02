@@ -1,0 +1,17 @@
+/* цвет остновного текста  #212121;*/
+/* вторичный цвет текста #757575 */
+/* акцент #2196F3 */
+/* белый #E5E5E5 */
+/* вторичный белый */
+/* Цвет фона #2F303A */
+
+:root {
+    --main-color-text: #212121;
+    --secondary-color-text: #757575;
+    --accented-color-text: #2196F3;
+    --background-head-footer: #2F303A;
+    --main-text: 14px;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}

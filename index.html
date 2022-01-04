@@ -15,10 +15,9 @@
       integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="crossorigin="anonymous"
       referrerpolicy="no-referrer"
       />
-    
-    <link rel="stylesheet" href="./css/main.min.css"/>
-  </head>
 
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
   <body>
     <header class="header">
       <div class="container header__container">
@@ -400,8 +399,8 @@
           <address class="footer__address">
             <ul class="footer__list">
               <li class="footer__item">
-                <a class="footer__contact-address" href="/">г. Киев, пр-т Леси Украинки,
-                  26</a>
+                <a class="footer__contact-address" href="/">г. Киев, пр-т Леси
+                  Украинки, 26</a>
               </li>
               <li class="footer__item">
                 <a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -446,25 +445,25 @@
             </li>
           </ul>
         </div>
-      
-      <div class="footer-right">
-        <p class="footer-right__text">Подпишитесь на рассылку</p>
-        <form class="footer-right__form">
-          <input 
-          type="email"
-          name="email"
-          class="footer-right__input"
-          placeholder="E-mail"
-          >
-          <button class="footer-right__button">
-              Подписаться 
-              <svg width="24" height="24" class="footer-right__icon" >
+
+        <div class="footer-right">
+          <p class="footer-right__text">Подпишитесь на рассылку</p>
+          <form class="footer-right__form">
+            <input
+              type="email"
+              name="email"
+              class="footer-right__input"
+              placeholder="E-mail"
+              />
+            <button class="footer-right__button">
+              Подписаться
+              <svg width="24" height="24" class="footer-right__icon">
                 <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-        </button>
-        </form>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -475,44 +474,42 @@
         </button>
         <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
         <form>
-            <label for="name"class="modal__form-label">Имя</label>
-            <div class="modal__form-container">
+          <label for="name" class="modal__form-label">Имя</label>
+          <div class="modal__form-container">
             <input
               type="name"
               name="user-name"
               id="name"
-              class="modal__form-input"/>
-              <svg width="12" height="12" class="modal__form-svg">
-                <use href="./images/icons.svg#icon-people"></use>
-              </svg>
+              class="modal__form-input"
+              />
+            <svg width="12" height="12" class="modal__form-svg">
+              <use href="./images/icons.svg#icon-people"></use>
+            </svg>
           </div>
-          
-            <label for="tell"class="modal__form-label">Телефон</label>
-            <div class="modal__form-container">
-            <input
-              type="tel"
-              name="tell"
-              id="tell"
-              class="modal__form-input" />
-              <svg width="13" height="13" class="modal__form-svg">
-                <use href="./images/icons.svg#icon-tell"></use>
-              </svg>
+
+          <label for="tell" class="modal__form-label">Телефон</label>
+          <div class="modal__form-container">
+            <input type="tel" name="tell" id="tell" class="modal__form-input" />
+            <svg width="13" height="13" class="modal__form-svg">
+              <use href="./images/icons.svg#icon-tell"></use>
+            </svg>
           </div>
-          
-            <label for="email"class="modal__form-label">Почта</label>
-            <div class="modal__form-container">
+
+          <label for="email" class="modal__form-label">Почта</label>
+          <div class="modal__form-container">
             <input
               type="email"
               name="email"
               id="email"
-              class="modal__form-input"/>
-              <svg width="15" height="12" class="modal__form-svg">
-                <use href="./images/icons.svg#icon-sms"></use>
-              </svg>
-            </div>
-         
+              class="modal__form-input"
+              />
+            <svg width="15" height="12" class="modal__form-svg">
+              <use href="./images/icons.svg#icon-sms"></use>
+            </svg>
+          </div>
+
           <div class="modal__container-textarea">
-            <label for="comment"class="modal__form-label">Комментарий</label>
+            <label for="comment" class="modal__form-label">Комментарий</label>
             <textarea
               name="comment"
               id="comment"
@@ -520,28 +517,20 @@
               class="modal__form-textarea"></textarea>
           </div>
           <div>
-            <label class="modal__label-policy" >
-            <input
-            type="checkbox"
-            name="policy"
-            class="modal__checkbox"/>
-            
+            <label class="modal__label-policy">
+              <input type="checkbox" name="policy" class="modal__checkbox" />
               <span class="modal__policy">
                 <svg width="11" height="8" class="modal__label-icon">
                   <use href="./images/icons.svg#icon-done"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю  
-                <a href="/" class="modal__lebel-link">
-                   Условия
-                  договора
-                </a>
-              </label>
-                
-          
-        <button type="submit" class="modal__form-button">Отправить</button>
-        </div>
-      </form>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="/" class="modal__lebel-link"> Условия договора </a>
+            </label>
+
+            <button type="submit" class="modal__form-button">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

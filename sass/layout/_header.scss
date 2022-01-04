@@ -3,13 +3,11 @@
 }
 
 .header__container {
-    display: flex;
-    align-items: center;
+    @include flex();
 }
 
 .nav-site {
-    display: flex;
-    align-items: center;
+    @include flex();
     padding-top: 24px;
     padding-bottom: 25px;
 }

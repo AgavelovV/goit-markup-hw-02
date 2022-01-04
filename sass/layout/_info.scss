@@ -8,9 +8,7 @@
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     margin-bottom: 30px;
 }
 

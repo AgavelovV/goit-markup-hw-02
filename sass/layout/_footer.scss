@@ -66,9 +66,7 @@
 .footer-center__link {
     width: 44px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     border-radius: 50%;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
@@ -129,9 +127,7 @@
     @include font($fsz:16px, $fw:700, $ls: 0.06em, $lh:1.87,);
     margin-left: 12px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
 }
 .footer-right__icon{
     margin-left: 10px;

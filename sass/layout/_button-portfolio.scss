@@ -4,8 +4,7 @@
 }
 
 .section-button__list {
-    display: flex;
-    justify-content: center;
+    @include flex ();
     margin-bottom: 50px;
 
 }

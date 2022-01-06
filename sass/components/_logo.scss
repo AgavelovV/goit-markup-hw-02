@@ -1,7 +1,8 @@
 .logo {
     font-family: 'Raleway', sans-serif;
     color: var(--accented-color-text);
-    @include font($fsz:26px, $fw:700);
+    // @include font($fsz:26px, $fw:700);
+    @include font($fsz:24px, $fw:700);
     text-decoration: none;
     display: block;
     align-items: center;

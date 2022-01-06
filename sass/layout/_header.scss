@@ -8,8 +8,11 @@
 
 .nav-site {
     @include flex();
-    padding-top: 24px;
-    padding-bottom: 25px;
+    // padding-top: 24px;
+    // padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;   
+
 }
 
 .nav-site__list {

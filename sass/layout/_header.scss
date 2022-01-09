@@ -8,16 +8,27 @@
 
 .nav-site {
     @include flex();
-    // padding-top: 24px;
-    // padding-bottom: 25px;
     padding-top: 16px;
-    padding-bottom: 16px;   
+    padding-bottom: 16px;
+    @media screen and(min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+       
 
 }
 
 .nav-site__list {
     display: flex;
     margin-left: 93px;
+    @media screen and(max-width: 768px) {
+        display: none;
+    }
+    
+    @media screen and(min-width: 768px) {
+        margin-left: 88px;
+    }
+    
 }
 
 .nav-site__item {

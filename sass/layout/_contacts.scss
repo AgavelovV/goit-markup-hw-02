@@ -1,8 +1,21 @@
 
 .header-contacts__list {
-    display: flex;
-    margin-left: auto;
     visibility: hidden;
+    
+    @media screen and(min-width: 768px) {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin-left: 84px;
+    }
+    @media screen and(min-width: 1200px) {
+        visibility: visible;
+        display: flex;
+        margin-left: auto;
+        flex-direction: row;
+    }
 }
 
 .header-contacts__icon {

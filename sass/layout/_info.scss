@@ -21,19 +21,24 @@
         margin-right: -30px;
         margin-bottom: -30px;
     }
+    @media screen and(min-width: 1200px) {
+        flex-wrap: nowrap;
+        
+    }
 }
 .section-info__item{
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
     @media screen and(min-width: 768px) {
-        
         flex-basis: calc(100% / 2 - 30px);
         margin-right: 30px;
         margin-bottom: 30px;
     }
+    
 }
     
-// .section-info__item:not(:last-child) {
-//     margin-right: 30px;
-// }
+
 
 .section-info__title {
     @include font($fw:700,);
@@ -48,5 +53,7 @@
 .section-info__text {
     @include font( $fw:400, $lh:1.71,);
     color: var(--secondary-color-text);
-    margin-bottom: 30px;
+    @media screen and(min-width: 768px) {
+        margin-bottom: 0;      
+    }   
 }

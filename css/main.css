@@ -134,7 +134,7 @@ body {
   margin-left: 93px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-site__list {
     display: none;
   }
@@ -249,7 +249,7 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   margin: auto;
   max-width: 1600px;
 }
@@ -653,6 +653,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__tabl {
     margin-bottom: 0;
+    flex-grow: 1;
   }
 }
 
@@ -672,7 +673,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer__left {
-    flex-grow: 1;
     margin-bottom: 0;
     align-items: start;
   }
@@ -905,6 +905,13 @@ body {
   padding: 40px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 610px;
+  }
+}
+
 .modal__button-icon {
   position: absolute;
   top: 8px;
@@ -936,6 +943,12 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.17;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal__title {
+    text-align: center;
+  }
 }
 
 .modal__form-container {
@@ -1052,9 +1065,30 @@ body {
   color: var(--secondary-color-text);
 }
 
+@media screen and (min-width: 480px) {
+  .modal__label-policy {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    flex-direction: row;
+    justify-content: start;
+  }
+}
+
 .modal__lebel-link {
   color: var(--accented-color-text);
   margin-left: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal__lebel-link {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    margin-left: 3px;
+  }
 }
 
 .modal__form-button {

@@ -5,10 +5,22 @@
 
 .section-button__list {
     @include flex ();
-    margin-bottom: 50px;
-
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: -15px;
+    @media screen and(min-width: 768px) {
+        justify-content: center;
+        margin-top: 0;
+    }
+    
 }
-
+.section-button__item{
+    margin-top: 15px;
+    @media screen and(min-width: 768px) {
+        margin-top: 0;
+    }
+}
 .section-button__item:not(:last-child) {
     margin-right: 8px;
 }

@@ -1,6 +1,6 @@
 
 .header-contacts__list {
-    visibility: hidden;
+    display: none;
     
     @media screen and(min-width: 768px) {
         visibility: visible;
@@ -15,6 +15,8 @@
         display: flex;
         margin-left: auto;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -22,9 +24,12 @@
     fill: currentColor;
     margin-right: 10px;
 }
-
 .header-contacts__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 10px;
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .header-contacts__link {

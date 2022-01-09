@@ -48,6 +48,56 @@
                   </a>
                 </li>
               </ul>
+              <button type="button"class="mob__buttons"data-menu-open >
+                <svg class="mob-icon__open" width="24" height="16">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg></button>
+              <div class="mob__menu is-hidden"data-menu>
+                <button type="button"class="mob__buttons"data-menu-close >
+                  <svg class="mob-icon__close" width="19" height="19">
+                  <use href="./images/icons.svg#icon-Exit"></use>
+                </svg></button>
+                <ul class="mob-menu__list">
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link " href="index.html">Студия</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link mob__current" href="portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="mob-menu__item">
+                    <a class="mob-menu__link" href="/">Контакты</a>
+                  </li>
+                </ul>
+                <div class="mob-container__down">
+                <ul class="mob-contacts__list">
+                  <li class="mob-contacts__item">
+                    <a class="mob-contacts__link-tell" href="tel:+380961111111">
+                      +38 096
+                      111 11 11
+                    </a>
+                  </li>
+                  <li class="mob-contacts__item">
+                    <a class="mob-contacts__link" href="mailto:info@devstudio.com">
+                      info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+                <ul class="mob-social__list">
+                  <li class="mob-social__item">
+                    <a href="/" class="mob-social__link">Instagram</a>
+                  </li>
+                  <li class="mob-social__item">
+                    <a href="/" class="mob-social__link">Twitter</a>
+                  </li>
+                  <li class="mob-social__item">
+                    <a href="/" class="mob-social__link">Facebook</a>
+                  </li>
+                  <li class="mob-social__item">
+                    <a href="/" class="mob-social__link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
+              </div>
             </div>
           </header>
 
@@ -77,9 +127,22 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/notebook.jpeg"
-                                        alt="Нортук на белом фоне" height="294"
-                                        width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/notebook.jpeg 1x,
+                                        ./images/notebook-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/notebook-tabl.jpg 1x,
+                                        ./images/notebook-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/notebook-mob.jpg 1x,
+                                        ./images/notebook-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">                      
+                                        <img src="./images/notebook.jpeg"
+                                        alt="Нортук на белом фоне"  >                                       
+                                  </picture>
+                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -95,9 +158,23 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/people.jpeg"
-                                        alt="Баскетболисты бросают мяч"
-                                        height="294" width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/people.jpeg 1x,
+                                        ./images/people-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/people-tabl.jpg 1x,
+                                        ./images/people-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/people-mob.jpg 1x,
+                                        ./images/people-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">
+                      
+                                        <img src="./images/people.jpeg"
+                                        alt="Баскетболисты бросают мяч">
+                                  </picture>
+                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -114,9 +191,21 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/seafood.jpeg"
-                                        alt="Логитип ресторана с рыбой"
-                                        height="294" width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/seafood.jpeg 1x,
+                                        ./images/seafood-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/seafood-tabl.jpg 1x,
+                                        ./images/seafood-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/seafood-mob.jpg 1x,
+                                        ./images/seafood-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">
+                                        <img src="./images/seafood.jpeg"
+                                        alt="Логитип ресторана с рыбой">                                        
+                                  </picture>                                  
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -133,8 +222,20 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/headphones.jpeg"
-                                        alt="Наушники" height="294" width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/headphones.jpeg 1x,
+                                        ./images/headphones-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/headphones-tabl.jpg 1x,
+                                        ./images/headphones-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/headphones-mob.jpg 1x,
+                                        ./images/headphones-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">                      
+                                        <img src="./images/headphones.jpeg"alt="Наушники" >                                        
+                                  </picture>                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -151,8 +252,22 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/box.jpeg" alt="Два бокса
-                                        на белом фоне" height="294" width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/box.jpeg 1x,
+                                        ./images/box-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/box-tabl.jpg 1x,
+                                        ./images/box-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/box-mob.jpg 1x,
+                                        ./images/box-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">                      
+                                        <img src="./images/box.jpeg" alt="Два бокса
+                                        на белом фоне">                                        
+                                  </picture> 
+                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -169,8 +284,22 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/monitor.jpeg"
-                                        alt="Монитор" height="294" width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/monitor.jpeg 1x,
+                                        ./images/monitor-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/monitor-tabl.jpg 1x,
+                                        ./images/monitor-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/monitor-mob.jpg 1x,
+                                        ./images/monitor-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">                      
+                                        <img src="./images/monitor.jpeg"
+                                        alt="Монитор" >                                      
+                                  </picture> 
+                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -187,9 +316,22 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/book.jpeg"
-                                        alt="Развернутая книга" height="294"
-                                        width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/book.jpeg 1x,
+                                        ./images/book-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/book-tabl.jpg 1x,
+                                        ./images/book-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/book-mob.jpg 1x,
+                                        ./images/book-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">                      
+                                        <img src="./images/book.jpeg"
+                                        alt="Развернутая книга">                                    
+                                  </picture> 
+                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -207,9 +349,22 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/label.jpeg" alt="Логотип
-                                        на белом листке бумаги"height="294"
-                                        width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/label.jpeg 1x,
+                                        ./images/label-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/label-tabl.jpg 1x,
+                                        ./images/label-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/label-mob.jpg 1x,
+                                        ./images/label-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">                      
+                                        <img src="./images/label.jpeg" alt="Логотип
+                                        на белом листке бумаги">                                   
+                                  </picture> 
+                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -226,9 +381,22 @@
                         <li class="examples__item">
                             <a href="/" class="examples__link">
                                 <div class="examples__container">
-                                    <img src="./images/computer.jpeg"
-                                        alt="Человек печает на ноутбуке"
-                                        height="294" width="370">
+                                  <picture>
+                                    <source srcset="
+                                        ./images/computer.jpeg 1x,
+                                        ./images/computer-2x.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="
+                                        ./images/computer-tabl.jpg 1x,
+                                        ./images/computer-tabl-2x.jpg 2x
+                                        " media="(min-width: 768px)">
+                                    <source srcset="
+                                        ./images/computer-mob.jpg 1x,
+                                        ./images/computer-mob-2x.jpg 2x
+                                        " media="(min-width: 320px)">                      
+                                        <img src="./images/computer.jpeg"
+                                        alt="Человек печает на ноутбуке">                                  
+                                  </picture> 
+                                    
                                     <p class="examples__desc">Технокряк
                                         это современная площадка распространения
                                         коронавируса. Компании используют эту
@@ -248,6 +416,7 @@
         </main>
         <footer class="footer">
             <div class="container footer__container">
+              <div class="footer__tabl">
               <div class="footer__left">
                 <a href="index.html" class="logo">Web<span class="footer__logo">Studio</span></a>
                 <address class="footer__address">
@@ -299,7 +468,7 @@
                   </li>
                 </ul>
               </div>
-            
+            </div>
             <div class="footer-right">
               <p class="footer-right__text">Подпишитесь на рассылку</p>
               <form class="footer-right__form">
@@ -319,6 +488,6 @@
             </div>
           </div>
           </footer>
-
+          <script src="./js/menu.js"></script>
     </body>
 </html>

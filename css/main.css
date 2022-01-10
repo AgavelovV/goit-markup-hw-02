@@ -333,7 +333,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-left: 84px;
+    margin-left: auto;
   }
 }
 
@@ -358,9 +358,16 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts__item:not(:last-child) {
+    margin-right: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-contacts__item:not(:last-child) {
     margin-bottom: 0;
+    margin-right: 50px;
   }
 }
 
@@ -718,6 +725,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-clients__list {
     flex-wrap: nowrap;
+    margin-bottom: 0px;
   }
 }
 
@@ -738,6 +746,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-clients__item {
     width: 170px;
+    margin-bottom: 0px;
   }
   .section-clients__item:not(:last-child) {
     margin-right: 30px;

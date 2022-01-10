@@ -3,11 +3,13 @@
 }
 
 .section-worker__title {
-    @include font($fsz:24px, $fw:700);
-    // @include font($fsz:36px, $fw:700);
-    text-align: center;
-    // margin-bottom: 50px;
+    @include font($fsz:24px, $fw:700);    
+    text-align: center;    
     margin-bottom: 30px;
+    @media screen and(min-width:1200px) {
+        @include font($fsz:36px, $fw:700);
+        margin-bottom: 50px;
+    }
 }
 
 .section-worker__list {
